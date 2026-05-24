@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="img/logo.png" type="image/x-icon">
+    <title>House</title>
+</head>
+<body>
+    <header>
+        <div class="container">
+                <a href="#" class="logo">
+                    <img src="img/logo.png" alt="logo" width="35px">
+                    <h2 class="logo-text">Ink. House</h2>
+                </a>    
+            <nav>
+                <ul>
+                    <li><a href="#reproduction">Репродукции</a></li>
+                    <li><a href="#feedback">Обратная связь</a></li>
+                    <li><a href="##">О нас</a></li>
+                    <li><a href="#"><img src="img/cart.png" alt="cart"></a></li>
+                </ul>
+            </nav>
+        </div>
+        <button class="toogle_theme">☼</button>
+    </header>
+    <main>
+        <div class="container">
+            <section class="hero">
+                <img src="img/hero-img.png" alt="bird">
+                <div class="hero-text">
+                    <h1>Реплики картин от <span>Ink. House</span></h1>
+                    <p>Высокое качество отрисовки на плотной бумаге или льняном холсте. Редкие произведения, доступные цены.</p>
+                    <button id="hero-button">Продукция</button>
+                    <p id="info"></p>
+                </div>
+            </section>
+            <section id="reproduction">
+                <div class="title">
+                    <h2>Репродукции</h2>
+                    <!-- Группа кнопок в названии -->
+                    <div class="button-group">
+                        <!-- Выделенная кнопка (класс select) -->
+                        <button class="title-button">Франция</button>
+                        <button class="title-button select">Германия</button>
+                        <button class="title-button">Англия</button>
+                    </div>
+                </div>
+                <div class="reprod-grid">
+                    <div class="reprod-card">
+                        <img src="img/card1.jpg" alt="img-card">
+                        <div class="reprod-text">
+                            <p class="author">Марсель Руссо</p>
+                            <h3>Охота Амура</h3>
+                            <p class="materials">Холст, масло (50х80)</p>
+                            <p class="cost">14 500 руб</p>
+                        </div>
+                        <button>В корзину</button>
+                    </div>
+                    <div class="reprod-card">
+                        <img src="img/card2.jpg" alt="img-card">
+                        <div class="reprod-text">
+                            <p class="author">Анри Селин</p>
+                            <h3>Дама с собачкой</h3>
+                            <p class="materials">Акрил, бумага (50х80)</p>
+                            <p class="cost">16 500 руб</p>
+                        </div>
+                        <button>В корзину</button>
+                    </div>
+                    <div class="reprod-card" id="#card3">
+                        <img src="img/card3.jpg" alt="img-card">
+                        <div class="reprod-text">
+                            <p class="author">Франсуа Дюпон</p>
+                            <h3>Процедура</h3>
+                            <p class="materials">Цветная литография (40х60)</p>
+                            <p class="cost">20 000 руб</p>
+                        </div>
+                        <button>В корзину</button>
+                    </div>
+                    <div class="reprod-card">
+                        <img src="img/card4.jpg" alt="img-card">
+                        <div class="reprod-text">
+                            <p class="author">Луи Детуш</p>
+                            <h3>Роза</h3>
+                            <p class="materials">Бумага, акрил (50х80)</p>
+                            <p class="cost">12 000 руб</p>
+                        </div>
+                        <button>В корзину</button>
+                    </div>
+                    <div class="reprod-card">
+                        <img src="img/card5.jpg" alt="img-card">
+                        <div class="reprod-text">
+                            <p class="author">Франсуа Дюпон</p>
+                            <h3>Птичья трапеза</h3>
+                            <p class="materials">Цветная литография (40х60)</p>
+                            <p class="cost">22 500 руб</p>
+                        </div>
+                        <button>В корзину</button>
+                    </div>
+                    <div class="reprod-card">
+                        <img src="img/card6.jpg" alt="img-card">
+                        <div class="reprod-text">
+                            <p class="author">Пьер Моранж</p>
+                            <h3>Пейзаж с рыбой</h3>
+                            <p class="materials">Цветная литография (40х60)</p>
+                            <p class="cost">20 000 руб</p>
+                        </div>
+                        <button>В корзину</button>
+                    </div>
+                </div>
+            </section>
+            <section class="feedback" id="feedback">
+                <h2 class="feedback_title">Обратная связь</h2>
+                <p class="feedback_desc">Вы можете оставить свои пожелания, а также подписаться на уведомления о новых картинах на нашем сайтe</p>
+                <form class="feedback_forms">
+                    <div class="forms_group-name">
+                        <label for="name">Ваше имя</label>
+                        <input type="text" placeholder="Введите имя" id="name">
+                    </div>
+                    <div class="forms_group-email">
+                    <label for="email">Ваша почта</label>
+                    <input type="email" placeholder="Введите email" id="email"></div>
+                    <button class="forms_btn">Отправить</button>
+                </form>
+            </section>
+        </div>
+    </main>
+    <footer>
+        <div class="container">
+            <div class="logo-group">
+                <a href="#" class="logo">
+                        <img src="img/logo.png" alt="logo" width="35px">
+                        <h2 class="logo-text">Ink. House</h2>
+                </a>
+                <div class="phone-group">
+                    <p class="phone">+7 (999) 543-54-54</p>
+                    <p>Мастерская</p>
+                </div>
+            </div>
+            <div class="foot-menu">
+                    <ul>
+                        <li class="title-menu">Репродукции</li>
+                        <li>Франция</li>
+                        <li>Германия</li>
+                        <li>Англия</li>
+                    </ul>
+                    <ul>
+                        <li class="title-menu">Новинки</li>
+                        <li>2021</li>
+                        <li>2020</li>
+                    </ul>
+                    <ul>
+                        <li class="title-menu">О нас</li>
+                        <li>Художники</li>
+                        <li>Менеджеры</li>
+                    </ul>
+            </div>
+            <div class="app-info">
+                <div class="app-group">
+                    <img src="img/app1.svg" alt="app">
+                    <img src="img/app2.svg" alt="app">
+                    <img src="img/app3.svg" alt="app">
+                </div>
+                <p>Ink. House ®</p>
+                <p>© Alexey Kubasov</p>
+            </div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
