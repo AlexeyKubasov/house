@@ -6,13 +6,12 @@ if (localStorage.getItem('scheme')=='dark'){
 };
 
 btn_theme.addEventListener("click", ()=>{
+    document.body.classList.toggle("dark");
     if(btn_theme.textContent == "☼"){
-        btn_theme.innerHTML == "☽︎";
-        document.body.classList.toggle("dark");
+        btn_theme.innerHTML = "☽︎";
         localStorage.setItem("scheme", "dark")
     } else {
-        btn_theme.innerHTML == "☼";
-        document.body.classList.toggle("dark");
+        btn_theme.innerHTML = "☼";
         localStorage.setItem("scheme", "light")
     }
 });
